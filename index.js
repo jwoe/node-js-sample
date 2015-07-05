@@ -6,7 +6,7 @@ app.set('ip', (process.env.OPENSHIFT_NODEJS_IP))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
-  response.send('Hello TNG! I\'m running at' + process.env.OPENSHIFT_APP_DNS)
+  response.send('Hello TNG! I\'m running at ' + process.env.OPENSHIFT_APP_DNS)
 })
 
 app.listen(app.get('port'), app.get('ip'), function() {
