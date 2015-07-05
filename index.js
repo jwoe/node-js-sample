@@ -10,5 +10,5 @@ app.get('/', function(request, response) {
 })
 
 app.listen(app.get('port'), app.get('ip'), function() {
-  console.log("Node app is running at" +  app.get('ip') + ":" + app.get('port'))
+  console.log("Node app is running at " +  app.get('ip') + ":" + app.get('port'))
 })
